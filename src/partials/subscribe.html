@@ -28,27 +28,29 @@
           </svg>
         </button>
         <label for="subscribe-email" class="subscribe-label">
-    By clicking Get Started, you agree to our Terms and Conditions.
-  </label>
+          By clicking Get Started, you agree to our Terms and Conditions.
+        </label>
       </form>
     </div>
     <div class="second-wrapper">
       <picture>
         <source
-          media="(min-width: 1440px)"
-          srcset="../img/normal-img-1x.webp 1x, ../img/normal-img-2x.webp 2x"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="../img/tablet-img-1x.webp 1x, ../img/tablet-img-2x.webp 2x"
-        />
-        <source
           media="(max-width: 767px)"
           srcset="../img/mobile-img-1x.webp 1x, ../img/mobile-img-2x.webp 2x"
         />
+        <source
+          media="(min-width: 768px) and (max-width: 1439px)"
+          srcset="../img/tablet-img-1x.webp 1x, ../img/tablet-img-2x.webp 2x"
+        />
+        <source
+          media="(min-width: 1440px)"
+          srcset="../img/normal-img-1x.webp 1x, ../img/normal-img-2x.webp 2x"
+          width="640px"
+        />
+
         <img
           class="subscribe-img"
-          src="../img/normal-img-1x.webp"
+          src="../img/mobile-img-1x.jpg"
           alt="Coffee Community"
         />
       </picture>
