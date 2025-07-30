@@ -1,5 +1,57 @@
 <section>
-    <div class="container">
-        Hello world!
+  <div class="container subscribe-container">
+    <div class="first-wrapper">
+      <h3 class="subscribe-title">Join Our Coffee Community</h3>
+      <p class="subscribe-text">
+        Experience the joy of coffee delivered right to your door. Sign up
+        today!
+      </p>
+
+      <form class="subscribe-form" action="#" method="post">
+        <input
+          type="email"
+          class="subscribe-input"
+          placeholder="Your Email Here"
+          required
+        />
+        <button type="submit" class="subscribe-button">
+          Subscribe
+          <svg width="24" height="24" viewBox="0 0 31 32" aria-hidden="true">
+            <path
+              fill="#fff"
+              d="m13.179 10.063 5.536 5.491-5.536 5.491 1.802 1.818 7.369-7.309-7.369-7.309-1.802 1.818z"
+            />
+            <path
+              fill="#fff"
+              d="m8.581 8.246-1.802 1.818 5.536 5.491-5.536 5.491 1.802 1.818 7.369-7.309-7.369-7.309z"
+            />
+          </svg>
+        </button>
+        <label for="subscribe-email" class="subscribe-label">
+    By clicking Get Started, you agree to our Terms and Conditions.
+  </label>
+      </form>
     </div>
+    <div class="second-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="../img/normal-img-1x.webp 1x, ../img/normal-img-2x.webp 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="../img/tablet-img-1x.webp 1x, ../img/tablet-img-2x.webp 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="../img/mobile-img-1x.webp 1x, ../img/mobile-img-2x.webp 2x"
+        />
+        <img
+          class="subscribe-img"
+          src="../img/normal-img-1x.webp"
+          alt="Coffee Community"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
