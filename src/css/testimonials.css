@@ -1,24 +1,25 @@
 .testimonials-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
 }
 .testimonials-title {
+  font-family: 'Aboreto', sans-serif;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
+  margin-bottom: 0;
 }
 .testimonials-list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
+}
+.testimonials-item {
+  display: flex;
 
-  list-style-type: none;
+  flex-direction: column;
+  gap: 24px;
 
   background: #c29d84;
   border: 1px solid rgba(11, 8, 3, 0.15);
@@ -27,18 +28,16 @@
 
   min-width: 265px;
 }
-.testimonials-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 24px;
-}
 .testimonials-container-icon {
 }
 .star-filled-icon {
 }
 .star-outline-icon {
+  fill: none;
+}
+
+.testimonials-text {
+  margin-bottom: 0;
 }
 
 .testimonials-text-name {
