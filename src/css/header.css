@@ -1,0 +1,32 @@
+.header {
+    background-color: #E0CBB4;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {}
+
+.header-logo {}
+
+.header-logo-icon {
+    fill: #0B0803;
+}
+
+.header-nav {}
+
+.header-nav-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+}
+
+.header-nav-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0B0803;
+}
