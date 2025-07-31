@@ -1,4 +1,5 @@
-<section>
+<section class="subscribe">
+  <h2 class="visually-hidden">Subscribe Section</h2>
   <div class="container subscribe-container">
     <div class="first-wrapper">
       <h3 class="subscribe-title">Join Our Coffee Community</h3>
@@ -8,12 +9,17 @@
       </p>
 
       <form class="subscribe-form" action="#" method="post">
-        <input
-          type="email"
-          class="subscribe-input"
-          placeholder="Your Email Here"
-          required
-        />
+        <div class="input-wrapper">
+          <input
+            type="email"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            class="subscribe-input"
+            id="subscribe-input"
+            placeholder="Your Email Here"
+            required
+          />
+          <span class="error-text" id="errorText">Error Text</span>
+        </div>
         <button type="submit" class="subscribe-button">
           Subscribe
 
@@ -34,30 +40,38 @@
             />
           </svg>
         </button>
-        <label for="subscribe-email" class="subscribe-label">
+        <label for="subscribe-input" class="subscribe-label">
           By clicking Get Started, you agree to our Terms and Conditions.
         </label>
       </form>
     </div>
     <div class="second-wrapper">
-      <picture>
+      <picture class="subscribe-picture">
         <source
           media="(max-width: 767px)"
-          srcset="../img/mobile-img-1x.webp 1x, ../img/mobile-img-2x.webp 2x"
+          srcset="
+            ../img/subscribe/mobile-img-1x.webp 1x,
+            ../img/subscribe/mobile-img-2x.webp 2x
+          "
         />
         <source
           media="(min-width: 768px) and (max-width: 1439px)"
-          srcset="../img/tablet-img-1x.webp 1x, ../img/tablet-img-2x.webp 2x"
+          srcset="
+            ../img/subscribe/tablet-img-1x.webp 1x,
+            ../img/subscribe/tablet-img-2x.webp 2x
+          "
         />
         <source
           media="(min-width: 1440px)"
-          srcset="../img/normal-img-1x.webp 1x, ../img/normal-img-2x.webp 2x"
-          width="640px"
+          srcset="
+            ../img/subscribe/normal-img-1x.webp 1x,
+            ../img/subscribe/normal-img-2x.webp 2x
+          "
         />
 
         <img
           class="subscribe-image"
-          src="../img/mobile-img-1x.jpg"
+          src="../img/subscribe/mobile-img-1x.jpg"
           alt="Coffee Community"
         />
       </picture>
