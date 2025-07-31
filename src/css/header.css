@@ -1,5 +1,6 @@
 .header {
   background-color: #e0cbb4;
+  padding: 0 64px;
 }
 
 .header-wrapper {
@@ -15,6 +16,18 @@
 }
 
 .header-logo-icon {
+  fill: #0b0803;
+}
+
+.mobile-menu-btn {
+  padding: 0;
+  background-color: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.mobile-menu-icon {
   fill: #0b0803;
 }
 
