@@ -6,6 +6,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 0 16px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .hero-title {
@@ -21,6 +30,14 @@
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
+}
+
+.hero-wrapper-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 8px;
 }
 
 .hero-button {
