@@ -45,6 +45,7 @@ section:last-of-type {
   }
 }
 
-#experience {
+#experience, #location {
   display: block;
 }
+
