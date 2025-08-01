@@ -11,11 +11,8 @@
 }
 
 .header,
-.subscribe-section {
-  display: none;
-}
-
-section:last-of-type {
+.subscribe-section,
+.location {
   display: none;
 }
 
