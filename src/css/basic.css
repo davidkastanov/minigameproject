@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.hide {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .container {
   max-width: 375px;
   margin: 0 auto;

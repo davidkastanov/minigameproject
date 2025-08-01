@@ -4,7 +4,7 @@
 #hero,
 #location,
 #subscribe,
-#testimonials,
+#testimonial,
 #welcome,
 #quality {
   display: none;
@@ -21,39 +21,49 @@
 @media only screen and (min-width: 320px) and (max-width: 374.98px) {
   #experience,
   #hero {
-    display: block;
+    display: flex;
   }
 
-  .location {
-    display: block;
+  .location,
+  header {
+    display: flex;
   }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 768.98px) {
   #experience,
   #hero {
-    display: block;
+    display: flex;
+  }
+
+  header {
+    display: flex;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439.98px) {
   #experience,
   #hero {
-    display: block;
+    display: flex;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   #experience {
-    display: block;
+    display: flex;
   }
 
-  .subscribe-section {
+  .subscribe-section,
+  header {
     display: block;
   }
 }
 
 #experience,
 #hero {
-  display: block;
+  display: flex;
+}
+
+header {
+  display: flex;
 }
