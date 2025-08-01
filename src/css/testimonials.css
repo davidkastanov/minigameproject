@@ -1,6 +1,6 @@
-section {
+.feedback {
   background-color: #e0cbb4;
-  padding: 64px 0;
+  padding: 64px 16px;
 }
 
 .feedback-title {
@@ -9,13 +9,14 @@ section {
   font-size: 36px;
   letter-spacing: 0.01em;
   margin-bottom: 24px;
-  text-align: center;
+  text-align: left;
 }
 
 .feedback-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 24px;
+  align-items: center;
 }
 
 .feedback-item {
@@ -27,6 +28,7 @@ section {
   background-color: #c29d84;
   border-radius: 32px;
   border: 1px solid rgba(11, 8, 3, 0.15);
+  min-width: 265px;
 }
 
 .feedback-stars-white {
@@ -45,4 +47,25 @@ section {
 .feedback-stars-name {
   font-weight: 600;
   line-height: 1.5;
+}
+
+/* _____tablet_____ */
+
+@media only screen and (min-width: 767.8px) {
+  .feedback {
+    padding: 64px 32px;
+    margin: 0 auto;
+  }
+
+  .feedback-title {
+    width: 498px;
+  }
+
+  .feedback-list {
+    flex-direction: row;
+    /* flex-basis: calc((100% - 24px) / 2); */
+  }
+
+  .feedback-item {
+  }
 }
