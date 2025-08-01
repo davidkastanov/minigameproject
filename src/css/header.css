@@ -1,19 +1,16 @@
 .header {
   background-color: #e0cbb4;
+  position: relative;
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
-}
-
-.container {
 }
 
 .header-logo {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 18px 0;
@@ -44,11 +41,8 @@
   fill: #0b0803;
 }
 
-.header-nav {
-}
-
 @media only screen and (max-width: 767px) {
-  .header-nav-list {
+  .header-nav {
     display: none;
   }
 }
@@ -66,7 +60,7 @@
   }
 }
 
-.header-nav-item {
+.mobile-menu-list .header-nav-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
