@@ -56,7 +56,7 @@
 } */
 
 .footer-container {
-
+    max-width: 1312px;
     padding: 24px 64px;
 }
 
@@ -83,6 +83,7 @@
     width: 1312px;
     height: 100px;
     background: var(--color-scheme-1-foreground);
+    margin-bottom: 32px;
 }
 .footer-logo {
   min-width: 64px;
