@@ -1,6 +1,7 @@
 .quality {
   font-family: 'Quicksand', sans-serif;
   color: #0b0803;
+  background-color: #e0cbb4;
 }
 
 @media screen and (min-width: 768px) {
@@ -48,8 +49,8 @@
 }
 
 .quality {
-  margin-top: 64px;
-  margin-bottom: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .quality-list {
@@ -100,8 +101,8 @@
 
 @media screen and (max-width: 767px) {
   .quality-wrapper {
-    align-items: center;
     max-width: 375px;
+    align-items: center;
   }
 }
 
@@ -112,13 +113,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .wrpper-text {
+  .quality-thumb {
+    display: block;
     width: 340px;
-  }
-  .wrpper-text:first-child {
-    width: 290px;
-  }
-  .wrpper-text:last-child {
-    width: 440px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
