@@ -1,20 +1,33 @@
-.testimonials-container {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
 .testimonials-title {
   font-family: 'Aboreto', sans-serif;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  margin-bottom: 0;
+
+  margin-bottom: 24px;
 }
+
+@media only screen and (min-width: 1440px) {
+  .testimonials-title {
+    font-size: 48px;
+    width: 416px;
+  }
+}
+
 .testimonials-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  row-gap: 24px;
 }
+
+@media only screen and (min-width: 768px) {
+  .testimonials-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
 .testimonials-item {
   display: flex;
 
@@ -28,8 +41,30 @@
 
   min-width: 265px;
 }
-.testimonials-container-icon {
+
+@media only screen and (min-width: 768px) {
+  .testimonials-item {
+    height: 253px;
+    gap: 0;
+
+    width: calc((100% - 24px) / 2);
+  }
 }
+
+@media only screen and (min-width: 1440px) {
+  .testimonials-item {
+    width: 310px;
+    height: 303px;
+
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+.testimonials-container-icon {
+  display: flex;
+  gap: 4px;
+}
+
 .star-filled-icon {
 }
 .star-outline-icon {
@@ -38,6 +73,13 @@
 
 .testimonials-text {
   margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .testimonials-text {
+    margin-top: 24px;
+    margin-bottom: auto;
+  }
 }
 
 .testimonials-text-name {
