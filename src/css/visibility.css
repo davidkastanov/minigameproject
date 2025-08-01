@@ -42,6 +42,7 @@
   }
 }
 
-#experience {
+#experience, #location {
   display: block;
 }
+
