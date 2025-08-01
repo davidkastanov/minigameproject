@@ -25,6 +25,10 @@ color: #0b0803;
 
 }
 
+.subscribe-text {
+    margin-bottom: 32px;
+}
+
 
 .input-wrapper {
   display: flex;
