@@ -30,6 +30,16 @@
   flex-direction: column;
   gap: 32px;
 }
+.quality-item picture {
+  display: block;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.quality-item img {
+  border-radius: 32px;
+}
+
 .quality-content {
   gap:8px;
 }
@@ -43,3 +53,23 @@
   font-size: 16px;
   text-align: center;
 }
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+ .quality-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+ }   
+.quality-item {
+    flex: 0 1 calc((100% - 32px) / 2);
+  }
+}
+@media only screen and (min-width: 1044px) {
+  .section-title {
+  font-size: 48px;
+  }
+   .quality-list {
+  flex-wrap: nowrap;
+  }
+  }
+  .quality-item {
+    gap: 32px;
+  }
