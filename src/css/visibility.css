@@ -19,29 +19,41 @@
 /* #hero, #location, #subscribe, #testimonials, #welcome, #quality */
 
 @media only screen and (min-width: 320px) and (max-width: 374.98px) {
-  #experience {
+  #experience,
+  #hero {
+    display: block;
+  }
+
+  .location {
     display: block;
   }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 768.98px) {
-  #experience {
+  #experience,
+  #hero {
     display: block;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439.98px) {
-  #experience {
+  #experience,
+  #hero {
     display: block;
   }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1440px) {
   #experience {
+    display: block;
+  }
+
+  .subscribe-section {
     display: block;
   }
 }
 
-#experience {
+#experience,
+#hero {
   display: block;
 }
