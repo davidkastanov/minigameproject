@@ -16,8 +16,9 @@
 @import url('./location.css');
 @import url('./footer.css');
 @import url('./mobile-menu.css');
-@import url('./visibility.css');
 @import url('./subscription.css');
+
+@import url('./visibility.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;

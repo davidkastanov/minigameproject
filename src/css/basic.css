@@ -13,11 +13,11 @@ html {
 }
 
 .container {
-  max-width: 375px;
+  width: 288px;
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width: 767.98px) {
   .container {
     width: 375px;
     max-width: 375px;
