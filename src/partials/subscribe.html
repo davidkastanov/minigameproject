@@ -1,28 +1,32 @@
 <section class="subscribe-section">
-  <div class="subscribe-container">
+  <div class="subscribe-container container">
     <div class="subscribe-text-wrapper">
-      <h2 class="subscribe-title">JOIN OUR COFFEE COMMUNITY</h2>
-      <p class="subscribe-section-text">
-        Experience the joy of coffee delivered right to your door. Sign up
-        today!
-      </p>
+      <div class="title-text-wrapper">
+        <h2 class="subscribe-title">JOIN OUR COFFEE COMMUNITY</h2>
+        <p class="subscribe-section-text">
+          Experience the joy of coffee delivered right to your door. Sign up
+          today!
+        </p>
+      </div>
       <form class="subscribe-form">
-        <input
-          class="subscribe-input"
-          name="email"
-          id="email"
-          type="email"
-          placeholder="Your Email Here"
-          required
-        />
-        <button class="subscribe-button" type="submit">
-          Subscribe
-          <svg class="subscribe-button-icon" width="24" height="24">
-            <use href="../img/images.svg#icon-chevrons-right"></use>
-          </svg>
-        </button>
+        <div class="input-wrapper">
+          <input
+            class="subscribe-input"
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Your Email Here"
+            required
+          />
+          <button class="subscribe-button" type="submit">
+            Subscribe
+            <svg class="subscribe-button-icon" width="24" height="24">
+              <use href="/images.svg#icon-chevrons-right"></use>
+            </svg>
+          </button>
+        </div>
         <!--<div  class="input-error-text">Error Text</div> -->
-        <label for="email"
+        <label class="subscribe-label-text" for="email"
           >By clicking Get Started, you agree to our Terms and Conditions</label
         >
       </form>
@@ -30,7 +34,7 @@
     <div class="subscribe-image-wrapper">
       <img
         class="subscribe-picture"
-        src="../img/desktop/subscribe-img-desktop-min.png"
+        src="./img/desktop/subscribe-img-desktop-min.png"
         alt="subscribe-picture"
       />
     </div>
