@@ -10,6 +10,13 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .quality-container.container {
+    max-width: 100%;
+    margin: 64px;
+  }
+}
+
 .name-section-quality {
   font-weight: 600;
   font-size: 16px;
@@ -60,16 +67,40 @@
   align-items: center;
   gap: 24px;
 }
+@media screen and (min-width: 1440px) {
+  .quality-header-wrapper {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .quality-list {
     flex-direction: row;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .quality-list {
+    flex-wrap: nowrap;
+  }
+}
+
+.quality-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   .quality-list-item {
     display: flex;
     width: 340px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .quality-list-item {
     justify-content: center;
   }
 
@@ -78,24 +109,37 @@
   }
 }
 
-.quality-img-set {
-  max-width: 374px;
+@media screen and (min-width: 1440px) {
+  .quality-list-item {
+    width: 422px;
+    height: 358px;
+  }
+}
+
+.quality-img {
   margin-bottom: 32px;
 }
 
-@media screen and (min-width: 768px) {
-  .quality-img-set {
-    width: 340px;
+@media screen and (max-width: 375px) {
+  .quality-img {
+    width: 100%;
   }
-  .quality-img:last-child {
-    max-width: 704px;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .quality-img {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .quality-img {
+    height: 240px;
   }
 }
 
 .quality-wrapper {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
 }
 
@@ -112,12 +156,22 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .quality-thumb {
-    display: block;
-    width: 340px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.quality-header-wrapper {
+  margin-bottom: 32px;
+}
+
+.wrapper-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .quality-list-item.quality-last p {
+    width: 440px;
+  }
+  .quality-list.quality-first p {
+    width: 294px;
   }
 }

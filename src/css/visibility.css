@@ -4,9 +4,10 @@
 #hero,
 #location,
 #subscribe,
-#testimonials,
+#testimonial,
 #welcome,
-#quality {
+#quality,
+#footer {
   display: none;
 }
 
@@ -19,30 +20,51 @@
 /* #hero, #location, #subscribe, #testimonials, #welcome, #quality */
 
 @media only screen and (min-width: 320px) and (max-width: 374.98px) {
-  #experience {
-    display: block;
+  #experience,
+  #hero {
+    display: flex;
+  }
+
+  .location,
+  header {
+    display: flex;
   }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 768.98px) {
-  #experience {
-    display: block;
+  #experience,
+  #hero {
+    display: flex;
+  }
+
+  header {
+    display: flex;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439.98px) {
+  #experience,
+  #hero {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   #experience {
+    display: flex;
+  }
+
+  .subscribe-section,
+  header {
     display: block;
   }
 }
 
-@media only screen and (min-width: 1140px) {
-  #experience {
-    display: block;
-  }
+#experience,
+#hero {
+  display: flex;
 }
 
-#experience, #location {
-  display: block;
+header {
+  display: flex;
 }
-
