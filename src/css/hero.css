@@ -60,6 +60,21 @@
   flex-basis: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero .container {
+    max-width: 704px;
+    padding: 311px 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero .container {
+    max-width: 1312px;
+    padding: 259px 32px;
+    margin: 0;
+  }
+}
+
 .hero-content {
   display: flex;
   align-items: flex-start;
@@ -106,31 +121,26 @@
   font-family: 'Quicksand', sans-serif;
   border-radius: 100px;
   padding: 10px 24px;
-  width: 135px;
+
   height: 44px;
-  background-color: rgba(111, 78, 55, 1);
-  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
-    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
-    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
-    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
-
-  color: #ffffff;
-  border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-button:hover,
-.hero-button:focus {
   box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
     inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
     inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
     inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
   background-color: #6f4e37;
+
+  color: #ffffff;
+  border: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
   opacity: 0.5;
 }
 
 .hero-button:active {
-  background-color: rgba(111, 78, 55, 1);
+  background-color: #6f4e37;
+  box-shadow: none;
+  opacity: 1;
 }
