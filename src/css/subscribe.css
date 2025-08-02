@@ -47,6 +47,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 150%;
 color: rgba(11, 8, 3, 0.6);
+background: rgba(255, 255, 255, 0);
 
 }
 .subscribe-input:focus {
