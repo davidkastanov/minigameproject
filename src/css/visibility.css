@@ -63,7 +63,8 @@
 
 #experience,
 #hero,
-#testimonial {
+#testimonial,
+#quality {
   display: flex;
 }
 
