@@ -59,6 +59,7 @@
 @media only screen and (min-width: 767.8px) {
   .feedback-container {
     max-width: 704px;
+    width: 704px;
   }
 
   .feedback {
@@ -89,6 +90,7 @@
 @media only screen and (min-width: 1440px) {
   .feedback-container {
     max-width: 1312px;
+    width: 1312px;
   }
 
   .feedback {
