@@ -20,26 +20,25 @@
   transform: translateY(0);
 }
 
+@media (max-width: 767px) {
+  .mobile-menu {
+    max-width: 767px;
+    display: block;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
 }
 
-.mobile-menu-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0 16px;
-}
-
 .mobile-menu-list {
-  /* padding: 0 118px; */
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
 }
 
 .mobile-menu-item {
