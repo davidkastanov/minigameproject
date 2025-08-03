@@ -1,0 +1,72 @@
+.subscription-container {
+  position: relative;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 64px 16px;
+  width: 288px;
+  background: #e0cbb4;
+  gap: 24px;
+}
+.subscription-btn-close-wrapper {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: aqua;
+}
+.subscription-btn-close {
+  background-color: blue;
+}
+
+.subscription-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.subscription-title {
+  font-family: 'Aboreto', sans-serif;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0b0803;
+}
+.subscription-text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #0b0803;
+}
+.subscription-img {
+  border-radius: 24px;
+  width: 256px;
+  height: 200px;
+}
+.subscription-big-btn-close {
+  width: 256px;
+  height: 44px;
+  border-radius: 100px;
+  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background: #6f4e37;
+  align-items: center;
+  text-align: center;
+}
+
+.subscription-btn-close-txt {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
