@@ -44,6 +44,13 @@
   }
 }
 
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: linear-gradient(rgba(0 0 0 / 50%), rgba(0 0 0 / 50%)),
+      url(../img/hero/herodesktop@2x.jpg);
+  }
+}
+
 .hero-container .container {
   max-width: 320px;
   padding-left: 32px;
@@ -67,6 +74,7 @@
 .hero-name {
   font-family: 'Aboreto', sans-serif;
   font-size: 40px;
+  font-style: normal;
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: #fff;
@@ -93,6 +101,7 @@
   color: #fff;
   margin-top: 24px;
   width: 256px;
+  font-style: normal;
 }
 
 @media only screen and (min-width: 768px) {
