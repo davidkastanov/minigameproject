@@ -156,20 +156,14 @@
   .footer-logo-icon {
     width: 64px;
     height: 37px;
-  } 
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .footer-logo-icon {
     width: 64px;
     height: 36px;
-  } 
-}
-
-.logo-icon {
-}
-
-.logo-part {
+  }
 }
 
 .contacts {
@@ -182,9 +176,6 @@
   justify-content: flex-start;
   flex-direction: row;
   gap: 12px;
-}
-
-.contacts-item {
 }
 
 .contacts-icon {
@@ -200,11 +191,6 @@
     width: 24px;
     height: 24px;
   }
-}
-.contacts-link {
-}
-
-.contacts-svg {
 }
 
 .footer-nav-list {
@@ -222,9 +208,6 @@
     flex-direction: row;
     gap: 32px;
   }
-}
-
-.footer-nav-item {
 }
 
 .footer-nav-link {
