@@ -64,7 +64,10 @@
 #experience,
 #hero,
 #testimonial,
-#quality {
+#quality,
+#footer,
+#subscribe,
+#location {
   display: flex;
 }
 
