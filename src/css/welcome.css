@@ -1,6 +1,5 @@
 .welcome-container {
     display: flex;
-    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     gap: 32px;
@@ -79,7 +78,7 @@
 }
 .welcome-picture {
     border-radius: 40px;
-    max-width: 288px;
+    width: 100%;
 }
 /* tablet */
 @media (min-width: 768px) and (max-width: 1439px) {
@@ -118,7 +117,7 @@
         width: 181px;
     }
     .welcome-picture {
-        max-width: 704px;
+        width: 704px;
     }
 }
 /* desktop */
@@ -146,7 +145,10 @@
     .welcome-text-wrapper {
         width: 640px;
     }
+    .welcome-button {
+        width: 181px;
+    }
     .welcome-picture {
-        max-width: 1312px;
+        width: 1312px;
     }
 }
