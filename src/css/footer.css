@@ -148,7 +148,7 @@
 }
 
 .footer-logo-icon {
-  width: 147px;
+  width: 196px;
   height: 85px;
 }
 
@@ -178,6 +178,10 @@
   height: 32px;
 }
 @media only screen and (min-width: 768px) {
+  .footer-logo-icon {
+    width: 147px;
+  }
+
   .contacts-icon {
     width: 24px;
     height: 24px;
