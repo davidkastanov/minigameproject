@@ -152,6 +152,20 @@
   height:85px;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-logo-icon {
+    width: 64px;
+    height: 37px;
+  } 
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-logo-icon {
+    width: 64px;
+    height: 36px;
+  } 
+}
+
 .logo-icon {
 }
 
