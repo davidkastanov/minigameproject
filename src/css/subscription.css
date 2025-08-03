@@ -1,6 +1,20 @@
+.subscription-section {
+  inset: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  padding: 64px 16px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
 .subscription-container {
   position: relative;
-  padding: 64px 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -8,7 +22,7 @@
   justify-content: center;
   border-radius: 40px;
   padding: 64px 16px;
-  width: 288px;
+  /* min-width: 288px; */
   background: #e0cbb4;
   gap: 24px;
 }
@@ -16,10 +30,14 @@
   position: absolute;
   top: 24px;
   right: 24px;
-  background-color: aqua;
 }
 .subscription-btn-close {
-  background-color: blue;
+  background-color: transparent;
+  border: none;
+}
+
+.subscription-close-icon {
+  fill: #0b0803;
 }
 
 .subscription-content-wrapper {
@@ -37,6 +55,7 @@
   letter-spacing: -0.01em;
   text-align: center;
   color: #0b0803;
+  margin: 0;
 }
 .subscription-text {
   font-family: 'Quicksand', sans-serif;
@@ -47,11 +66,11 @@
 }
 .subscription-img {
   border-radius: 24px;
-  width: 256px;
-  height: 200px;
+  /* min-width: 256px;
+  min-height: 200px; */
 }
 .subscription-big-btn-close {
-  width: 256px;
+  min-width: 256px;
   height: 44px;
   border-radius: 100px;
   box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
@@ -63,10 +82,55 @@
   text-align: center;
 }
 
+.subscription-big-btn-close:hover,
+.subscription-big-btn-close:focus {
+  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background-color: #6f4e37;
+  opacity: 0.5;
+}
+
 .subscription-btn-close-txt {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscription-section {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .subscription-container {
+    padding: 64px;
+    gap: 48px;
+  }
+
+  .subscription-title {
+    font-size: 36px;
+  }
+
+  .subscription-big-btn-close {
+    width: 340px;
+  }
+
+  .subscription-img {
+    width: 644px;
+    height: 374px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .subscription-title {
+    font-size: 48px;
+  }
+
+  .subscription-big-btn-close {
+    width: 274px;
+  }
 }
