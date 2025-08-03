@@ -1,0 +1,70 @@
+<section class="subscribe-section">
+  <div class="subscribe-container container">
+    <div class="subscribe-text-wrapper">
+      <div class="title-text-wrapper">
+        <h2 class="subscribe-title">JOIN OUR COFFEE COMMUNITY</h2>
+        <p class="subscribe-section-text">
+          Experience the joy of coffee delivered right to your door. Sign up
+          today!
+        </p>
+      </div>
+      <form class="subscribe-form">
+        <div class="input-wrapper">
+          <input
+            class="subscribe-input"
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Your Email Here"
+            required
+          />
+          <button class="subscribe-button" type="submit">
+            Subscribe
+            <svg class="subscribe-button-icon" width="24" height="24">
+              <use href="/images.svg#icon-chevrons-right"></use>
+            </svg>
+          </button>
+        </div>
+        <!--<div  class="input-error-text">Error Text</div> -->
+        <label class="subscribe-label-text" for="email"
+          >By clicking Get Started, you agree to our Terms and Conditions</label
+        >
+      </form>
+    </div>
+    <div class="subscribe-image-wrapper">
+      <picture>
+        <!-- desktop -->
+        <source
+          media="(min-width:1440px)"
+          srcset="
+            ./img/desktop/subscribe-img-desktop@1x-min.png 1x,
+            ./img/desktop/subscribe-img-desktop@2x-min.png 2x
+          "
+        />
+
+        <!-- tablet -->
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./img/tabelet/subscribe-img-tablet@1x.png 1x,
+            ./img/tabelet/subscribe-img-tablet@2x.png 2x
+          "
+        />
+
+        <!-- mobile -->
+        <source
+          media="(max-width:767px)"
+          srcset="
+            ./img/mobile/subscribe-img-phone@1x.png 1x,
+            ./img/mobile/subscribe-img-phone@2x.png 2x
+          "
+        />
+        <img
+          class="subscribe-picture"
+          src="./img/desktop/subscribe-img-desktop@1x-min.png"
+          alt="subscribe-picture"
+        />
+      </picture>
+    </div>
+  </div>
+</section>

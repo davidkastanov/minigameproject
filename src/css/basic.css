@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.container {
+  min-width: 288px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767.98px) {
+  .container {
+    width: 342px;
+    max-width: 342px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+    max-width: 704px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    width: 1312px;
+    max-width: 1312px;
+  }
+}
