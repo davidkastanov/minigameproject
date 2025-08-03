@@ -135,7 +135,7 @@
 .footer-logo {
   width: 196px;
   height: 84px;
-  border: 1px solid red;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,8 +148,8 @@
 }
 
 .footer-logo-icon {
-  width:147px;
-  height:85px;
+  width: 147px;
+  height: 85px;
 }
 
 .logo-icon {
