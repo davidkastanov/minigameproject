@@ -7,6 +7,7 @@
   visibility: hidden;
   pointer-events: none;
   z-index: 1002;
+  position: fixed;
 }
 
 .is-open {
@@ -83,10 +84,6 @@
   padding: 0;
 }
 
-.icon-close {
-}
-.modal-wrapper {
-}
 .modal-title {
   margin-bottom: 16px;
   font-family: 'Aboreto', sans-serif;
