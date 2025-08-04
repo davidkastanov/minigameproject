@@ -3,7 +3,7 @@
 }
 .section-title-wrapper {
   text-align: center;
-  margin: 0 auto 32px;
+  /* margin-bottom: 32px; */
   max-width: 288px;
 }
 .quality-label {
@@ -77,8 +77,13 @@
     width: 100%;
   }
   .quality-content {
-     max-width: 440px;
+    max-width: 330px;
   }
+  .quality-item:nth-child(3) 
+  .quality-content {
+    max-width: 430px;
+  }
+
 }
 @media only screen and (min-width: 1440px) {
   .section-title-wrapper {
