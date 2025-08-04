@@ -1,3 +1,9 @@
+.header {
+    position: sticky;
+  top: 0;
+  z-index: 1000;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .container.header-container {
   display: flex;
   flex-direction: row;
@@ -5,11 +11,7 @@
   padding: 18px 16px 12px 18px;
   align-items: center;
       background-color: #e0cbb4;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 
-  transition: box-shadow 0.3s ease;
 }
 @media only screen and (min-width: 768px) {
   .container.header-container {
