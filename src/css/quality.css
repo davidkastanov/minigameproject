@@ -1,10 +1,14 @@
+
 .section-quality {
   padding: 64px 0;
 }
 .section-title-wrapper {
   text-align: center;
-  /* margin-bottom: 32px; */
+  margin-bottom: 32px;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 288px;
+ 
 }
 .quality-label {
   font-weight: 600;
