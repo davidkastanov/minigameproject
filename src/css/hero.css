@@ -10,7 +10,9 @@
   height: 644px;
 }
 
-@media only screen and (min-resolution: 192dpi) {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-container {
     background-image: linear-gradient(rgba(0 0 0 / 50%), rgba(0 0 0 / 50%)),
       url(../img/hero/heromobile@2x.jpg);
