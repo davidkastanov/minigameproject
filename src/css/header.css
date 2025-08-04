@@ -4,6 +4,12 @@
   justify-content: space-between;
   padding: 18px 16px 12px 18px;
   align-items: center;
+      background-color: #e0cbb4;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  transition: box-shadow 0.3s ease;
 }
 @media only screen and (min-width: 768px) {
   .container.header-container {
