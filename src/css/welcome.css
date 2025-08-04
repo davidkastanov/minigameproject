@@ -67,18 +67,16 @@
 .welcome-icon {
     fill: #fff;
 }
+.welcome-button:hover .welcome-icon,
 .welcome-button:hover,
 .welcome-button:focus {
-    background: rgba(203, 184, 162);
-    color: #0b0803;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    background: rgb(203, 184, 162);
     border: none;
     box-shadow: none;
-    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-}
-.welcome-button:hover .welcome-icon,
-.welcome-button:focus .welcome-icon {
+    color: #0b0803;
     fill: #0b0803;
-}
+} 
 .welcome-picture {
     border-radius: 40px;
     width: 100%;
