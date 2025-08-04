@@ -38,7 +38,9 @@ color: #fff;
 .subscribe-button:hover .subscribe-svg,
 .subscribe-button:hover,
 .subscribe-button:focus {
-   background: rgba(11, 8, 3, 0.1);
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+
+   background: rgb(203, 184, 162);
   border: none;
   box-shadow: none;
    color: #0b0803;
