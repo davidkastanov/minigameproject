@@ -1,0 +1,16 @@
+import './js/header';
+import './js/title';
+import './js/age';
+import './js/random';
+import './js/paper';
+import './js/calculator';
+import './js/calculator-num';
+import './js/dino';
+import './js/football';
+import './js/long-num';
+import './js/team';
+import './js/exerises';
+import './js/footer';
+import './js/footer-modal';
+import './js/first-modal';
+import './js/bcg';
