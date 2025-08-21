@@ -1,3 +1,46 @@
+* {
+  font-family: "Montserrat Alternates";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+button, input {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1246px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  transition: 500ms;
+}
+
 .title {
   display: flex;
   align-items: center;
@@ -7,4 +50,208 @@
   font-weight: 400;
   font-size: 24px;
   color: black;
+}
+
+.paper {
+  padding: 36px 0px;
+}
+.paper .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  text-align: center;
+}
+.paper__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.paper__items {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+.paper__item-btn {
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  background: #000;
+  transition: 250ms;
+}
+.paper__item-btn:hover {
+  transform: translateY(-3px);
+}
+.paper__win-lost {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+.paper__btn-box {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.paper__btn {
+  color: #FFF;
+  background: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 0px auto;
+  border: none;
+  transition: 250ms;
+}
+.paper__btn:hover {
+  background: #292929;
+}
+.paper__score {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+.calculator {
+  padding: 36px 0px;
+}
+.calculator .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.calculator__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.calculator__box {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+.calculator__input {
+  display: block;
+  width: auto;
+  margin: auto 0px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #D7D7D7;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.calculator__symbols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.calculator__btn {
+  display: block;
+  width: auto;
+  margin: auto 0px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.team .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 36px;
+}
+.team__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.team__box {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+.team__items {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+.team__item {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.team__img {
+  margin: 0px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background: #D9D9D9;
+}
+.team__name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.team__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+.team__btn {
+  color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.team__btn:hover {
+  background: rgb(0, 0, 0);
+}
+.team__prev {
+  left: 10px;
+}
+.team__next {
+  right: 10px;
 }/*# sourceMappingURL=main.css.map */
