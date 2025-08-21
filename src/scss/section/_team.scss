@@ -1,0 +1,87 @@
+.team {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 36px;
+    }
+
+    &__title {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__box {
+        position: relative;
+        max-width: 600px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 0px auto;
+    }
+
+    &__items {
+        display: flex;
+        transition: transform 0.4s ease;
+    }
+
+    &__item {
+        // display: flex;
+        // flex-direction: column;
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__img {
+        margin: 0px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        background: #D9D9D9;
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__btn {
+        color: #000;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.8);
+        border: none;
+        font-size: 24px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        user-select: none;
+
+        &:hover {
+            background: rgb(0, 0, 0);
+        }
+    }
+
+    &__prev {
+        left: 10px;
+    }
+
+    &__next {
+        right: 10px;
+    }
+}
