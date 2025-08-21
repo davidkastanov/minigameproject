@@ -1,1 +1,10 @@
-/*# sourceMappingURL=main.css.map */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title__main {
+  font-weight: 400;
+  font-size: 24px;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
