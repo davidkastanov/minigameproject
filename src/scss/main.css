@@ -283,13 +283,26 @@ body.dark-mode .header__dropdown-item:hover {
 
 .title {
   display: flex;
-  align-items: center;
   justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 .title__main {
+  color: #000;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
+  font-style: normal;
   font-size: 24px;
-  color: black;
+  line-height: normal;
+  margin-top: 36px;
+}
+.title__border {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+  border-bottom: #000 1px solid;
+  width: 536px;
+  height: 1px;
 }
 
 .paper {
@@ -418,6 +431,59 @@ body.dark-mode .header__dropdown-item:hover {
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
   padding: 5px 10px;
   cursor: pointer;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.time__input {
+  width: auto;
+  margin: auto 0px;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 20px;
+  background: #d7d7d7;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+.time__box {
+  margin-left: 33px;
+  margin-right: 33px;
+  height: 0;
+  border: black dashed 1px;
+  width: 100px;
+}
+.time__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.time__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+}
+.time__icon {
+  fill: white;
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding: 10px;
+  position: absolute;
 }
 
 .team .container {
