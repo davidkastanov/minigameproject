@@ -1,12 +1,37 @@
-<div class="backdrop">
-    
-</div>
-<div class="container">
-    <nav class="header_nav">
-        <ul class="nav_items">
-            <li class="nav_item"> <a href="" class="nav_link">Інтерактив</a></li>
-            <li class="nav_item"> <a href="" class="nav_link">Наша команда</a></li>
-            <li class="nav_item"> <a href="" class="nav_link">Контакти</a></li>
-        </ul>
-    </nav>
-</div>
+<div class="all">
+    <header id="header__jakor" class="header">
+        <link rel="stylesheet" href="../scss/section/_header.scss">
+      <div class="container">
+        <nav class="header__navigation">
+          <a href="#hero" class="header__logo-link">
+            <img  class="header__logo" src="../img/logo.png" alt="">
+          </a>
+  
+          <ul class="header__list">
+            <li class="header__item header__interactive" tabindex="0">
+              <div class="header__interactive-label">
+                <p class="header__text">Інтерактив</p>
+                <img src="./img/header-arrow.webp" alt="" class="header__arrow" />
+              </div>
+  
+            <li class="header__item"><a href="#photo" class="header__text">Наша команда</a></li>
+            <li class="header__item"><a href="#footer__id" class="header__text">Контакти</a></li>
+          </ul>
+  
+          <label class="header__theme">
+            <input class="header__theme-changer" type="checkbox" aria-label="Toggle theme">
+            <span class="header__theme-slider">
+              <img class="header__theme-icon header__theme-icon-sun" src="../img/header-sun.webp" alt="Light">
+              <img class="header__theme-icon header__theme-icon-moon" src="./image/moon-icon.webp" alt="Dark">
+            </span>
+          </label>
+  
+          <p class="header__greetings">Вітаємо, User!</p>
+  
+          <!-- <button class="header__burger" type="button" data-mobile-open> -->
+            <div class="header__menu"></div>
+          </button>
+        </nav>
+      </div>
+    </header>
+    </div>
