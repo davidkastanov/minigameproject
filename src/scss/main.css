@@ -295,9 +295,6 @@ body.dark-mode .header__dropdown-item:hover {
 .hero {
   padding-top: 60px;
 }
-.hero .container {
-  padding-top: 36px;
-}
 .hero__fullbox {
   display: flex;
   flex-direction: column;
