@@ -3,20 +3,21 @@
         <h2 class="calculator__title">Калькулятор</h2>
 
         <div class="calculator__box">
-            <input type="text" class="calculator__input calculator__input-first" placeholder="Введіть число">
+            <input type="number" class="calculator__input calculator__input-first" placeholder="Введіть число">
 
             <div class="calculator__symbols">
-                <button class="calculator__btn calculator__symbols-btn">+</button>
-                <button class="calculator__btn calculator__symbols-btn">*</button>
-                <button class="calculator__btn calculator__symbols-btn">-</button>
-                <button class="calculator__btn calculator__symbols-btn">/</button>
+                <button class="calculator__btn calculator__symbols-btn calculator__plus">+</button>
+                <button class="calculator__btn calculator__symbols-btn calculator__multiply">*</button>
+                <button class="calculator__btn calculator__symbols-btn calculator__minus">-</button>
+                <button class="calculator__btn calculator__symbols-btn calculator__divide calculator__operator">/</button>
             </div>
 
-            <input type="text" class="calculator__input calculator__input-second" placeholder="Введіть число">
+            <input type="number" class="calculator__input calculator__input-second" placeholder="Введіть число">
 
             <button class="calculator__btn calculator__equal">=</button>
 
-            <p class="calculator__result-num">Результат</p>
+            <p class="calculator__result">Результат: <span class="calculator__result-num"></span></p>
         </div>
+        <p class="calculator__text"></p>
     </div>
 </section>
