@@ -88,7 +88,7 @@ section:not(:last-child)::after {
   gap: 24px;
 }
 
-header__theme .header__logo {
+.header__logo {
   margin-right: 61px;
   width: 95px;
   height: 39px;
@@ -303,6 +303,248 @@ body.dark-mode .header__dropdown-item:hover {
 .header__theme-changer:checked + .header__theme-slider > .header__theme-icon-moon {
   opacity: 1;
 }
+.header body.dark-mode {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.5s;
+}
+.header body.dark-mode img {
+  filter: invert(1);
+  transition: filter 0.5s;
+}
+.header body:not(.dark-mode) img {
+  filter: invert(0);
+  transition: filter 0.5s;
+}
+
+body.dark-mode {
+  background-color: #333;
+}
+
+.dark-mode a {
+  color: white;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .container {
+  background-color: #444444;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .header {
+  background-color: #444444;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.dark-mode .header__arrow {
+  filter: invert(1);
+}
+
+.dark-mode .footer {
+  background-color: #444444;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .hero__line-year {
+  background-color: white;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .calculate__flex {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .numbers__border {
+  border-top: solid white 1px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .dino__border {
+  border-top: solid white 1px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .dino__dino {
+  background-image: url(../image/white-dino.webp);
+  width: 50px;
+  height: 50px;
+}
+
+.dark-mode .dino__cactus {
+  background-image: url(../image/white-cactus.webp);
+  top: 200px;
+  background-repeat: no-repeat;
+  background-size: 35px 40px;
+  transform: scale(6);
+  width: 50px;
+  height: 40px;
+}
+
+.dark-mode .dinomodal__btn {
+  color: white;
+}
+
+.dark-mode .register__close {
+  color: white;
+}
+
+.dark-mode .socker__field {
+  border: 2px solid #fff;
+}
+
+.dark-mode p {
+  color: white;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode h1 {
+  color: white;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode h2 {
+  color: white;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode h3 {
+  color: white;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .header__logo {
+  background-image: url(../image/white-logo.webp);
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .footer__img {
+  background-image: url(../image/white-logo1.webp);
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .modal {
+  background-color: #444444;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .register {
+  background-color: #616161;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode span {
+  color: white;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode a {
+  color: white;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .container {
+  background-color: #444444;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .header {
+  background-color: #444444;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .footer {
+  background-color: #444444;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .hero__line-year {
+  background-color: white;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .calculate__flex {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .numbers__border {
+  border-top: solid white 1px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .header__dropdown {
+  border-color: white;
+  background-color: #444444;
+}
+
+.dark-mode .header__dropdown-item {
+  color: white;
+  background-color: #444444;
+}
+
+.dark-mode .header__arrow {
+  stroke: #fff;
+}
+
+.dark-mode .header__dropdown-item:hover {
+  background-color: #616161;
+  width: 100%;
+}
+
+.dark-mode .game__description {
+  color: white;
+}
+
+.dark-mode .calculate__secondnumber {
+  color: #000;
+}
+
+.dark-mode #result-text {
+  color: white;
+}
+
+.dark-mode .hero__check-year {
+  color: rgb(8, 170, 8);
+}
+
+.dark-mode .mobile__window {
+  background: #333333;
+}
+
+.dark-mode .header__menu {
+  background-image: url(../image/white-logo.webp);
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-mode .mobilee__windoww {
+  background: #333333;
+}
+
+.dark-mode section {
+  background-color: #444444;
+}
+
+/* светлая тема */
+.photo__arrow path {
+  stroke: black;
+  stroke-width: 2;
+}
+
+/* тёмная тема */
+.dark-mode .photo__arrow path {
+  stroke: white;
+}
 
 .title {
   display: flex;
@@ -319,13 +561,162 @@ body.dark-mode .header__dropdown-item:hover {
   line-height: normal;
   margin-top: 36px;
 }
-.title__border {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 36px;
-  border-bottom: #000 1px solid;
-  width: 536px;
+
+.hero {
+  padding-top: 60px;
+}
+.hero__fullbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .hero__title-Popular {
+    font-size: 22px;
+  }
+  .hero__title-year {
+    font-size: 15px;
+  }
+  .hero__search-year {
+    width: 38px;
+    height: 38px;
+  }
+}
+.hero__title-Popular {
+  width: 386px;
+  height: 29px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: Montserrat Alternates;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.hero__line-year {
   height: 1px;
+  background-color: black;
+  margin-top: 20px;
+  width: 536px;
+  border-width: 1px;
+}
+.hero__title-year {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  margin-top: 15px;
+  text-align: center;
+}
+.hero__input-box-year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+.hero__input-year {
+  color: #7E7E7E;
+  border-radius: 20px 0 0 20px;
+  background: #d7d7d7;
+  border: none;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.hero__input-year::-moz-placeholder {
+  color: #7E7E7E;
+  font-size: 13px;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.hero__input-year::placeholder {
+  color: #7E7E7E;
+  font-size: 13px;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.hero__search-year {
+  background-color: black;
+  height: 35px;
+  width: 35px;
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.hero__search-year:hover {
+  background-color: gray;
+  transition-duration: 0.6s;
+}
+.hero img {
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero__check-year {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+  margin-left: 110px;
+  min-width: 300px;
+  max-width: 310px;
+  font-family: Montserrat Alternates;
+}
+@media (max-width: 768px) {
+  .hero__title-Popular {
+    font-size: 20px;
+  }
+  .hero__line-year {
+    max-width: 80%;
+  }
+  .hero__title-year {
+    font-size: 14px;
+  }
+  .hero__input-box-year {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .hero__search-year {
+    border-radius: 20px;
+    width: 50px;
+  }
+  .hero__check-year {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 480px) {
+  .hero__title-Popular {
+    font-size: 18px;
+  }
+  .hero__title-year {
+    font-size: 14px;
+  }
+  .hero__input-box-year {
+    gap: 5px;
+  }
+  .hero__search-year {
+    width: 45px;
+    height: 35px;
+  }
+  .hero__check-year {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 
 .paper {
@@ -547,11 +938,75 @@ body.dark-mode .header__dropdown-item:hover {
   fill: white;
   width: 15px;
   height: 15px;
-  background-color: #000;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  padding: 10px;
+}
+.time__button {
   position: absolute;
+  background-color: #000;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  padding: 8px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.time__amount {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dino .container {
+  padding: 36px 0;
+  position: relative;
+  width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.dino__title {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.dino__game {
+  position: relative;
+  margin: 30px auto 0;
+  width: 720px;
+  height: 241px;
+  overflow: hidden;
+  background-image: url("../img/ground.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 420px 10px;
+}
+.dino__game.ground-animate {
+  animation: groundMove 2s linear infinite;
+}
+.dino__dino {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  background-image: url("../img/dinosaur.webp");
+  background-size: cover;
+}
+.dino__dino.jump {
+  animation: jump 0.65s linear;
+}
+.dino__cactus {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  bottom: -10px;
+  left: 700px;
+  background-image: url("../img/cactus.webp");
+  background-repeat: no-repeat;
+  background-size: 15px 25px;
+  transform: scale(2);
 }
 
 .team .container {
@@ -634,115 +1089,4 @@ body.dark-mode .header__dropdown-item:hover {
 .team__next {
   right: 10px;
 }
-.team__under {
-  display: flex;
-  gap: 6px;
-  justify-content: center;
-}
-.team__under-box {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  position: relative;
-  width: 18px;
-  height: 3px;
-  border-radius: 3px;
-  background-color: #D9D9D9;
-  color: #D9D9D9;
-  font-size: 10px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 250ms;
-}
-.team__under-box:hover {
-  background-color: #797979;
-  color: #797979;
-  opacity: 0.6;
-}
-.team__under-box-span {
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: 250ms;
-}
-.team__under-box-active {
-  width: 30px;
-  color: #797979;
-  background-color: #797979;
-  font-size: 16px;
-  font-weight: 800;
-}
-.team__under-box-active .team__under-box-span {
-  position: absolute;
-  top: 4px;
-}
-
-.exerises .container {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-  text-align: center;
-}
-.exerises__title {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-}
-.exerises__items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 59px;
-  max-width: 577px;
-  width: 100%;
-  margin: 0px auto;
-}
-.exerises__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-basis: calc((100% - 177px) / 4);
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
-  background: #D9D9D9;
-  font-size: 8px;
-  font-weight: 400;
-  line-height: 170%;
-}
-.exerises__questions {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0px auto;
-  gap: 20px 36px;
-}
-.exerises__questions li:last-child {
-  grid-column: 1/-1;
-  justify-self: center;
-}
-.exerises__questions li:nth-last-child(2) button {
-  width: 368px;
-  text-align: left;
-}
-.exerises__question:nth-child(odd) {
-  justify-self: end;
-}
-.exerises__question:nth-child(even) {
-  justify-self: start;
-}
-.exerises__question-button {
-  padding: 10px 20px;
-  border-radius: 20px;
-  background: #000;
-  color: #fff;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: normal;
-  transition: 250ms;
-}
-.exerises__question-button:hover {
-  opacity: 0.8;
 }/*# sourceMappingURL=main.css.map */

@@ -1,18 +1,26 @@
+
 <div class="all">
     <header id="header__jakor" class="header">
-        <link rel="stylesheet" href="../scss/section/_header.scss">
       <div class="container">
         <nav class="header__navigation">
           <a href="#hero" class="header__logo-link">
-            <img  class="header__logo" src="../img/logo.png" alt="">
+            <!-- <img  class="header__logo" src="../image/header-coding.png" alt=""> -->
+            <div class="header__logo" aria-hidden="true"></div>
           </a>
   
           <ul class="header__list">
             <li class="header__item header__interactive" tabindex="0">
               <div class="header__interactive-label">
                 <p class="header__text">Інтерактив</p>
-                <img src="./img/header-arrow.webp" alt="" class="header__arrow" />
+                <img src="../img/header-arrow.webp" alt="" class="header__arrow" />
               </div>
+  
+              <div class="header__dropdown" role="menu" aria-hidden="true">
+                <button class="header__dropdown-item" id="nunn1">Числовий</button>
+                <button class="header__dropdown-item" id="nuj2">Ігровий</button>
+                <button class="header__dropdown-item" id="nul3">Ознайомчий</button>
+              </div>
+            </li>
   
             <li class="header__item"><a href="#photo" class="header__text">Наша команда</a></li>
             <li class="header__item"><a href="#footer__id" class="header__text">Контакти</a></li>
@@ -21,7 +29,7 @@
           <label class="header__theme">
             <input class="header__theme-changer" type="checkbox" aria-label="Toggle theme">
             <span class="header__theme-slider">
-              <img class="header__theme-icon header__theme-icon-sun" src="../img/header-sun.webp" alt="Light">
+              <img class="header__theme-icon header__theme-icon-sun" src="./image/sun-icon.webp" alt="Light">
               <img class="header__theme-icon header__theme-icon-moon" src="./image/moon-icon.webp" alt="Dark">
             </span>
           </label>
