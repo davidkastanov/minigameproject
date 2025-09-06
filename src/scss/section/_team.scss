@@ -4,11 +4,10 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        gap: 36px;
     }
 
     &__title {
-        color: #000;
+        color: $black-color;
         font-family: "Montserrat Alternates";
         font-size: 16px;
         font-style: normal;
@@ -18,11 +17,11 @@
 
     &__box {
         position: relative;
-        max-width: 600px;
+        max-width: 100%;
         width: 100%;
         overflow: hidden;
         border-radius: 10px;
-        margin: 0px auto;
+        margin: 36px auto 24px auto;
     }
 
     &__items {
@@ -31,13 +30,14 @@
     }
 
     &__item {
-        // display: flex;
-        // flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
         width: 100%;
         height: auto;
         flex-shrink: 0;
         object-fit: cover;
-        display: block;
+        // display: block;
     }
 
     &__img {
@@ -45,7 +45,7 @@
         width: 150px;
         height: 150px;
         border-radius: 20px;
-        background: #D9D9D9;
+        background: $light-gray-color;
     }
 
     &__name {
@@ -61,19 +61,23 @@
     }
 
     &__btn {
-        color: #000;
+        stroke: $black-color;
+        stroke-width: 1px;
         position: absolute;
         top: 50%;
+        width: 50px;
+        height: 100px;
         transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.8);
+        background: none;
         border: none;
         font-size: 24px;
         padding: 5px 10px;
         border-radius: 5px;
         user-select: none;
+        transition: 250ms;
 
         &:hover {
-            background: rgb(0, 0, 0);
+            opacity: 0.6;
         }
     }
 
@@ -83,5 +87,52 @@
 
     &__next {
         right: 10px;
+    }
+
+    &__under {
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+
+        &-box {
+            user-select: none;
+            position: relative;
+            width: 18px;
+            height: 3px;
+            border-radius: 3px;
+            background-color: $light-gray-color;
+            color: $light-gray-color;
+            font-size: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 250ms;
+
+            &:hover {
+                background-color: $gray-color;
+                color: $gray-color;
+                opacity: 0.6;
+            }
+
+            &-span {
+                position: absolute;
+                top: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: 250ms;
+            }
+
+            &-active {
+                width: 30px;
+                color: $gray-color;
+                background-color: $gray-color;
+                font-size: 16px;
+                font-weight: 800;
+
+                .team__under-box-span {
+                    position: absolute;
+                    top: 4px;
+                }
+            }
+        }
     }
 }
