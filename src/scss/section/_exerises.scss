@@ -47,32 +47,43 @@
         &-dead {}
     }
 
+    &__warn {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 170%;
+    }
+
     &__questions {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
         margin: 0px auto;
-        gap: 20px 36px; // 20px по вертикали, 36px по горизонтали
-
-        & li:last-child {
-            grid-column: 1 / -1;
-            justify-self: center;
-        }
-
-        & li:nth-last-child(2) {
-            & button {
-                width: 368px;
-                text-align: left;
-            }
-        }
+        column-gap: 36px;
+        row-gap: 20px;
     }
 
     &__question {
+        display: flex; // вот это
+        align-items: center; // по желанию, чтобы кнопка выровнялась по вертикали
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: calc((100% - 36px) / 2);
+
         &:nth-child(odd) {
-            justify-self: end; // левые колонки прижимаются вправо
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        &:nth-child(odd) &-button {
+            text-align: right;
         }
 
         &:nth-child(even) {
-            justify-self: start; // правые колонки прижимаются влево (по умолчанию)
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+        &:nth-child(even) &-button {
+            text-align: left;
         }
 
         &-button {
