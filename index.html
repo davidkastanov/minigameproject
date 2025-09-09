@@ -10,26 +10,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/minigameproject/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/minigameproject/assets/index-e6a968ee.css">
+    <link rel="stylesheet" href="/minigameproject/assets/index-07d09539.css">
   </head>
   <body>
 
     <!-- Loads the specified .html file -->
-    <div class="all">
+    
+<div class="all">
     <header id="header__jakor" class="header">
-        <link rel="stylesheet" href="../scss/section/_header.scss">
       <div class="container">
         <nav class="header__navigation">
           <a href="#hero" class="header__logo-link">
-            <img  class="header__logo" src="../img/logo.png" alt="">
+            <!-- <img  class="header__logo" src="../image/header-coding.png" alt=""> -->
+            <div class="header__logo" aria-hidden="true"></div>
           </a>
   
           <ul class="header__list">
             <li class="header__item header__interactive" tabindex="0">
               <div class="header__interactive-label">
                 <p class="header__text">Інтерактив</p>
-                <img src="data:image/webp;base64,UklGRnYAAABXRUJQVlA4WAoAAAAQAAAACgAABgAAQUxQSDcAAAABX0CQbRu6wYuwiIhBXMAmsm0n+z+5o6ZiaLMEJCADWRksR/Q/OrTxilxxadQ9jyNlq3b4C1gBAFZQOCAYAAAAMAEAnQEqCwAHAAIANCWkAANwAP77/VAA" alt="" class="header__arrow" />
+                <img src="../img/header-arrow.webp" alt="" class="header__arrow" />
               </div>
+  
+              <div class="header__dropdown" role="menu" aria-hidden="true">
+                <button class="header__dropdown-item" id="nunn1">Числовий</button>
+                <button class="header__dropdown-item" id="nuj2">Ігровий</button>
+                <button class="header__dropdown-item" id="nul3">Ознайомчий</button>
+              </div>
+            </li>
   
             <li class="header__item"><a href="#photo" class="header__text">Наша команда</a></li>
             <li class="header__item"><a href="#footer__id" class="header__text">Контакти</a></li>
@@ -38,7 +46,7 @@
           <label class="header__theme">
             <input class="header__theme-changer" type="checkbox" aria-label="Toggle theme">
             <span class="header__theme-slider">
-              <img class="header__theme-icon header__theme-icon-sun" src="../img/header-sun.webp" alt="Light">
+              <img class="header__theme-icon header__theme-icon-sun" src="./image/sun-icon.webp" alt="Light">
               <img class="header__theme-icon header__theme-icon-moon" src="./image/moon-icon.webp" alt="Dark">
             </span>
           </label>
@@ -68,7 +76,7 @@
         <p class="hero__title-year">Перевір в який рік ти народився</p>
         <div class="hero__box-year">
           <div class="hero__input-box-year">
-            <input type="text" class="hero__input-year" id="heroInput" placeholder="Введіть рік народження"/>
+            <input type="number" class="hero__input-year" id="heroInput" placeholder="Введіть рік народження"/>
             <button id="checkButton" class="hero__search-year" type="button" aria-label="button confirm">
                 <img width="15px" height:="15px" src="../img/search-button.png" alt="search">
             </button>
@@ -78,6 +86,7 @@
     </div>
     </div>
     </section>
+
 
 
     
@@ -122,21 +131,22 @@
         <h2 class="calculator__title">Калькулятор</h2>
 
         <div class="calculator__box">
-            <input type="text" class="calculator__input calculator__input-first" placeholder="Введіть число">
+            <input type="number" class="calculator__input calculator__input-first" placeholder="Введіть число">
 
             <div class="calculator__symbols">
-                <button class="calculator__btn calculator__symbols-btn">+</button>
-                <button class="calculator__btn calculator__symbols-btn">*</button>
-                <button class="calculator__btn calculator__symbols-btn">-</button>
-                <button class="calculator__btn calculator__symbols-btn">/</button>
+                <button class="calculator__btn calculator__symbols-btn calculator__plus">+</button>
+                <button class="calculator__btn calculator__symbols-btn calculator__multiply">*</button>
+                <button class="calculator__btn calculator__symbols-btn calculator__minus">-</button>
+                <button class="calculator__btn calculator__symbols-btn calculator__divide calculator__operator">/</button>
             </div>
 
-            <input type="text" class="calculator__input calculator__input-second" placeholder="Введіть число">
+            <input type="number" class="calculator__input calculator__input-second" placeholder="Введіть число">
 
             <button class="calculator__btn calculator__equal">=</button>
 
-            <p class="calculator__result-num">Результат</p>
+            <p class="calculator__result">Результат: <span class="calculator__result-num"></span></p>
         </div>
+        <p class="calculator__text"></p>
     </div>
 </section>
     <section class="time">
@@ -144,9 +154,11 @@
     <h2 class="time__title">Калькулятор часу</h2>
     <div class="time__wrap">
     <input type="text" class="time__input" placeholder="Введіть число">
+    <button class="time__button">
     <svg class="time__icon">
                 <use href="/minigameproject/assets/symbol-defs-9ca81d26.svg#icon-lupa"></use>
               </svg>
+    </button>
     <div class="time__box"></div>
     <p class="time__amount"></p>
     </div>
@@ -163,13 +175,33 @@
 </section>
 
     
-    
+    <section class="numbers" id="number">
+    <div class="container">
+      <div class="numbers__border"></div>
+      <h2 class="numbers__logo">Введіть 3 числа</h2>
+      <ul class="numbers__list">
+        <li class="numbers__item">
+          <input type="text" class="numbers__input" id="imp1" placeholder="Введіть число" />
+        </li>
+        <li class="numbers__item">
+          <input type="text" class="numbers__input" id="imp2"  placeholder="Введіть число" />
+        </li>
+        <li class="numbers__item">
+          <input type="text" class="numbers__input" id="imp3" placeholder="Введіть число" />
+        </li>
+      </ul>
+      <div class="numbers__fix">
+        <p class="numbers__text">Найбільше число, яке ви ввели -  </p>
+        <p class="numbers__num" id="result223">  </p>
+      </div>
+      <div class="numbers__border"></div>
+    </div>
+  </section>
     <section class="team">
     <div class="container">
         <h2 class="team__title">Наша команда</h2>
 
         <div class="team__box">
-
             <ul class="team__items">
                 <li class="team__item">
                     <img src="#" alt="Фото Давід Каштанов" class="team__img">
@@ -192,42 +224,104 @@
                     <p class="team__text">Lorem ipsum dolor sit amet.</p>
                 </li>
             </ul>
-
-            <button class="team__btn team__prev">
-                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="102" viewBox="0 0 52 102" fill="none">
-                    <path d="M51 1L1 51L51 101" stroke="black" />
-                </svg>
-            </button>
-            <button class="team__btn team__next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="102" viewBox="0 0 52 102" fill="none">
-                    <path d="M1 1L51 51L1 101" stroke="black" />
-                </svg>
-            </button>
         </div>
+        <button class="team__btn team__prev">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 102" fill="none">
+                <path d="M51 1L1 51L51 101" />
+            </svg>
+        </button>
+        <button class="team__btn team__next">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 102" fill="none">
+                <path d="M1 1L51 51L1 101" />
+            </svg>
+        </button>
+
+        <div class="team__under">
+            <div class="team__under-box"><span class="team__under-box-span">1</span></div>
+            <div class="team__under-box"><span class="team__under-box-span">2</span></div>
+            <div class="team__under-box"><span class="team__under-box-span">3</span></div>
+            <div class="team__under-box"><span class="team__under-box-span">4</span></div>
+        </div>
+    </div>
+</section>
+    <section class="exerises">
+    <div class="container">
+        <h2 class="exerises__title">Обери вченого/их</h2>
+
+        <ul class="exerises__items">
+        </ul>
+
+        <p class="exerises__warn">Натисніть на кнопку</p>
+
+        <ul class="exerises__questions">
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="born-19-st">Які вчені народилися в 19 ст.</button>
+            </li>
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="born-albert">Знайти рік народження Albert
+                    Einshtein</button>
+            </li>
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="alphabet">Відсортувати вчених за алфавітом</button>
+            </li>
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="surname-first-c">Знайти вчених, прізвища яких починаються на на літеру “С” </button>
+            </li>
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="born-dead-years">Відсортувати вчених за кількістю прожитих років</button>
+            </li>
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="name-first-a">Видалити всіх вчених, ім’я яких починається на “А”</button>
+            </li>
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="dead-last">Знайти вченого, який народився найпізніше</button>
+            </li>
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="born-dead-short-long">Знайти вченого, який прожив найдовше і вченого, який прожив найменше</button>
+            </li>
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="first-name-surname">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+            </li>
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="worked-exerises-19-st">Дізнатися чи всі вченні працювали в 19 столітті</button>
+            </li>
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="sum-ages">
+                    Знайти суму років усіх вчених
+                </button>
+            </li>
+            <li class="exerises__question">
+                <button class="exerises__question-button" data-action="remove-born-15-17">
+                    Видалити вчених, народжених у 15–17 ст.
+                </button>
+            </li>
+        </ul>
     </div>
 </section>
     
     
-    
     <link rel="stylesheet" href="../scss/section/_first-modal.scss">
-<div class="backdrop" id="modal">
-  <div class="modal">
-    <button class="close-btn" id="closeModalBtn">&times;</button>
-    <p class="modal-text">
-      Привіт!<br>
-      Ви потрапили на сайт інтерактивних ігор та завдань<br>
-      Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
-      Бажаємо Вам гарно провести час!
-    </p>
-    <form class="modal-form">
-      <label for="username">Введіть своє ім’я:</label>
-      <input type="text" id="username" placeholder="Ваше ім’я...">
-      <button type="submit">Зберегти</button>
-    </form>
-  </div>
+<section class="register">
+    <div class="register__container">
+        <p class="register__text">
+            Привіт!<br>
+            Ви потрапили на сайт інтерактивних ігор та завдань.<br>
+            Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
+            Бажаємо Вам гарно провести час!
+        </p>
+    <div class="register__box">
+   
+        <label for="username" class="register__label">Введіть своє ім’я:</label>
+        <input type="text" id="username" class="register__input"  placeholder="Ваше ім’я..." required>
+<button type="submit" class="register__button">Зберегти</button>
+    </div>
+    </div>
+    <div class="register__backdrop"></div>
+    <button class="register__close">&times;</button>
 </div>
-
+</section>
 <script src="../js/first-modal.js"></script>
+
 
     
 
