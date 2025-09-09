@@ -1,19 +1,22 @@
 <link rel="stylesheet" href="../scss/section/_first-modal.scss">
-<div class="backdrop" id="modal">
-  <div class="modal">
-    <button class="close-btn" id="closeModalBtn">&times;</button>
-    <p class="modal-text">
-      Привіт!<br>
-      Ви потрапили на сайт інтерактивних ігор та завдань<br>
-      Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
-      Бажаємо Вам гарно провести час!
-    </p>
-    <form class="modal-form">
-      <label for="username">Введіть своє ім’я:</label>
-      <input type="text" id="username" placeholder="Ваше ім’я...">
-      <button type="submit">Зберегти</button>
-    </form>
-  </div>
+<section class="register">
+    <div class="register__container">
+        <p class="register__text">
+            Привіт!<br>
+            Ви потрапили на сайт інтерактивних ігор та завдань.<br>
+            Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
+            Бажаємо Вам гарно провести час!
+        </p>
+    <div class="register__box">
+   
+        <label for="username" class="register__label">Введіть своє ім’я:</label>
+        <input type="text" id="username" class="register__input"  placeholder="Ваше ім’я..." required>
+<button type="submit" class="register__button">Зберегти</button>
+    </div>
+    </div>
+    <div class="register__backdrop"></div>
+    <button class="register__close">&times;</button>
 </div>
-
+</section>
 <script src="../js/first-modal.js"></script>
+

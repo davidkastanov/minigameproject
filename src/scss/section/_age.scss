@@ -18,6 +18,8 @@
  
 
 
+
+
  
       &__search-year {
         width: 38px;
@@ -63,6 +65,8 @@
     }
 
 
+
+
     &__input-year {
       color: #7E7E7E;
       border-radius: 20px 0 0 20px;
@@ -76,6 +80,20 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+
+
+      &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+        &[type="number"] {
+            -moz-appearance: textfield;
+            appearance: textfield;
+            /* на всякий случай */
+        }
     }
    
     &__input-year::placeholder {
@@ -87,6 +105,12 @@
       width: 100%;
       text-align: center;
     }
+
+
+
+
+
+
 
 
 
@@ -144,6 +168,8 @@
  
 
 
+
+
  
       &__search-year {
         border-radius: 20px;
@@ -184,3 +210,233 @@
       }
     }
   }
+
+
+
+
+
+
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: #80808080;
+    backdrop-filter: blur(3px);
+   
+   
+   
+ 
+    &--visible {
+      display: flex;
+     
+    }
+  }
+
+
+.register {
+
+
+    position: fixed;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    z-index: 1001;
+    width: 576px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: "Montserrat Alternates", sans-serif;
+
+
+
+
+    @media (max-width: 480px) {
+        width: 400px;
+        height: 300px;
+
+
+        .register__icon {
+            width: 20px;
+            height: 20px;
+        }
+
+
+        .register__input {
+            width: 119;
+            height: 25;
+        }
+    }
+
+
+&__container {
+    max-width: 500px;
+   
+
+
+}
+
+
+&__text {
+    width: 392;
+    height: 60;
+    top: 46px;
+    left: 92px;
+   
+}
+
+
+&__label {
+    font-size: 16px;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+&__input {
+    width: 169;
+    height: 35;
+    top: 181px;
+    left: 204px;
+    gap: 10px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-right: 90px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    &:hover, &:focus {
+        border: none;
+        background-color: #dbdbdb;
+        outline: none;
+    }
+}
+
+
+&__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+&__button {
+    margin-top: 15px;
+    width: 105px;
+    height: 35px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Montserrat Alternates", sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+
+&__button:hover, &__button:focus {
+    background: #444;
+}
+
+
+&__text {
+    margin-bottom: 60px;
+}
+
+
+&__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+&__icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+
+&__icon--left-top {
+    top: 200px;
+    left: 5%;
+}
+
+
+&__icon--left-bottom {
+    bottom: 10%;
+    left: 5%;
+}
+
+
+&__icon--right-top {
+    top: 200px;
+    right: 5%;
+}
+
+
+&__icon--right-bottom {
+    bottom: 10%;
+    right: 5%;
+}
+}
+
+
+body.modal-open-bg::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #80808080;
+    backdrop-filter: blur(3px);  
+    z-index: 998;
+}
+
+
+body.dark-mode .register img {
+    filter: invert(1);
+}
+
+
+body.dark-mode .backdrops img {
+    filter: invert(1);
+}
+
+
+.no-scroll {
+    overflow: hidden;
+   
+}
+
+
+.backdrop-hidden {
+    display: none;
+   
+}
+
+
+.error {
+    border: 2px solid red;
+}
+ 
