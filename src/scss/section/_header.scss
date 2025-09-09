@@ -1,4 +1,5 @@
 
+
 .header {
   background: #fff;
   padding: 18px 0;
@@ -22,6 +23,8 @@
 }
 
 
+
+
 .header__logo {
   margin-right: 61px;
   width: 95px;
@@ -31,11 +34,16 @@
   background-size: contain;
 
 
+
+
 }
+
 
 // body.dark-mode  img {
 //   filter: invert(1);
 // }
+
+
 
 
 .header__list {
@@ -55,6 +63,8 @@
 }
 
 
+
+
 .header__interactive-label {
   display: flex;
   align-items: center;
@@ -67,13 +77,15 @@
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 14px;
   color: #000;
-  
+ 
 }
 
+
 .header__interactive.open .header__arrow {
-  transform: rotate(0deg); 
+  transform: rotate(0deg);
   transition: transform 0.3s ease;
 }
+
 
 .header__arrow {
   width: 8px;
@@ -87,9 +99,11 @@
 }
 
 
+
+
 .header__dropdown {
   position: absolute;
-  top: calc(100% + 30px); 
+  top: calc(100% + 30px);
   left: -20%;
   width: 160px;
   align-items: center;
@@ -98,7 +112,7 @@
   border-left: 1px solid #000;
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;
-  border-radius: 0 0 12px 12px; 
+  border-radius: 0 0 12px 12px;
   padding: 0;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
   opacity: 0;
@@ -107,6 +121,9 @@
   transition: opacity 200ms ease, transform 200ms ease, visibility 200ms;
   z-index: 20;
 }
+
+
+
 
 
 
@@ -133,11 +150,15 @@
   background: #f6f6f6;
 }
 
+
 .header__interactive.open .header__dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
+
+
+
 
 
 
@@ -163,9 +184,11 @@ body.dark-mode .header__dropdown-item:hover {
   background: rgba(255, 255, 255, 0.04);
 }
 
+
 .header {
   &__greetings {
     display: none;
+
 
     @media screen and (min-width: 1090px) {
       display: block;
@@ -178,6 +201,7 @@ body.dark-mode .header__dropdown-item:hover {
     }
   }
 
+
   &__theme {
     display: inline-flex;
     justify-content: flex-end;
@@ -187,13 +211,13 @@ body.dark-mode .header__dropdown-item:hover {
     margin-left: auto;
     border-radius: 11px;
     background: gray;
-  
+ 
     &-changer {
       width: 0;
       height: 0;
       opacity: 0;
     }
-  
+ 
     &-slider {
       position: absolute;
       top: 0;
@@ -204,7 +228,7 @@ body.dark-mode .header__dropdown-item:hover {
       border-radius: 11px;
       background-color: rgb(153, 150, 150);
       transition: background-color 0.3s;
-  
+ 
       &::before {
         content: '';
         position: absolute;
@@ -219,12 +243,12 @@ body.dark-mode .header__dropdown-item:hover {
         transform-origin: center;
       }
     }
-  
+ 
     &-changer:checked + &-slider::before {
       transform: translateX(20px) rotate(720deg); // Ось обертання на 720 градусів
       background-color: black;
     }
-  
+ 
     &-icon {
       position: absolute;
       top: 0;
@@ -234,294 +258,41 @@ body.dark-mode .header__dropdown-item:hover {
       border-radius: 50%;
       z-index: 1;
       transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1);
-  
+ 
       &-sun {
         left: 0;
         opacity: 1;
       }
-  
+ 
       &-moon {
         right: 0;
         opacity: 0;
       }
     }
-  
+ 
     &-changer:checked + &-slider > &-icon-sun {
       opacity: 0;
     }
-  
+ 
     &-changer:checked + &-slider > &-icon-moon {
       opacity: 1;
     }
   }
-  
-  
+ 
+ 
   body.dark-mode {
     background-color: #333;
     color: #fff;
     transition: all 0.5s;
-  
+ 
     img {
       filter: invert(1);
       transition: filter 0.5s;
     }
   }
-  
+ 
   body:not(.dark-mode) img {
     filter: invert(0);
     transition: filter 0.5s;
   }
 }
-
-
-
-
-
-
-
-
-
-//              Чорна тема
-
-body.dark-mode {
-  background-color: #333;
-}
-
-.dark-mode a {
-  color: white;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.dark-mode {
-  background-color: #333333;
-  color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode .container {
-  background-color: #444444;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode .header {
-  background-color: #444444;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-body.dark-mode .header__arrow {
-  filter: invert(1);
-}
-
-.dark-mode .footer {
-  background-color: #444444;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode .hero__line-year {
-  background-color: white;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode .calculate__flex {
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.dark-mode .numbers__border {
-  border-top: solid white 1px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode .dino__border {
-  border-top: solid white 1px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode .dino__dino {
-  background-image: url(../image/white-dino.webp);
-  width: 50px;
-  height: 50px;
-  
-}
-
-.dark-mode .dino__cactus {
-  background-image: url(../image/white-cactus.webp);
-  top: 200px;
-
-      background-repeat: no-repeat;
-    background-size: 35px 40px;
-    transform: scale(6);
-        width: 50px;
-    height: 40px;
-  
-
-  // background-color: none;
-}
-
-
-.dark-mode .dinomodal__btn {
-  color: white;
-}
-
-.dark-mode .register__close {
-  color: white;
-}
-
-.dark-mode .socker__field {
-  border: 2px solid #fff;
-}
-
-.dark-mode p {
-  color: white;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode h1 {
-  color: white;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode h2 {
-  color: white;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode h3 {
-  color: white;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-
-.dark-mode .header__logo {
-  background-image: url(../image/white-logo.webp);
-  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode .footer__img {
-  background-image: url(../image/white-logo1.webp);
-  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode .modal {
-  background-color: #444444;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.dark-mode .register {
-  background-color: #616161;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.dark-mode span {
-  color: white;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-  .dark-mode a {
-    color: white;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .dark-mode {
-    background-color: #333333;
-    color: #ffffff;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .dark-mode .container {
-    background-color: #444444;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .dark-mode .header {
-    background-color: #444444;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .dark-mode .footer {
-    background-color: #444444;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .dark-mode .hero__line-year {
-    background-color: white;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .dark-mode .calculate__flex {
-
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  
-  .dark-mode .numbers__border {
-    border-top: solid white 1px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-
-.dark-mode .header__dropdown {
-  border-color: white;
-  background-color: #444444;
-}
-
-.dark-mode .header__dropdown-item {
-  color: white;
-  background-color: #444444;
-}
-
-.dark-mode .header__arrow {
-  stroke: #fff;
-}
-
-.dark-mode .header__dropdown-item:hover {
-  background-color: #616161;
-  width: 100%;
-}
-
-.dark-mode .game__description {
-  color: white;
-}
-
-.dark-mode .calculate__secondnumber {
-  color: #000;
-}
-
-.dark-mode #result-text {
-  color: white;
-}
-
-.dark-mode .hero__check-year {
-  color: rgb(8, 170, 8);
-}
-
-.dark-mode .mobile__window {
-  background: #333333;
-}
-
-.dark-mode .header__menu {
-  background-image: url(../image/white-logo.webp);
-  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-mode .mobilee__windoww {
-  background: #333333;
-}
-
-.dark-mode section {
-  background-color: #444444;
-}
-
-/* светлая тема */
-.photo__arrow path {
-  stroke: black;
-  stroke-width: 2;
-}
-
-/* тёмная тема */
-.dark-mode .photo__arrow path {
-  stroke: white;
-}
-
-// .dark-mode .football__field {
-//   border-color: white;
-// }
