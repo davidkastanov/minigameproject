@@ -658,14 +658,6 @@ body.dark-mode .header__dropdown-item:hover {
   margin-bottom: 36px;
   margin-top: 36px;
 }
-.numbers__border {
-  background-color: black;
-  height: 1px;
-  width: 536px;
-  display: flex;
-  justify-self: center;
-  max-width: 100%;
-}
 .numbers__fix {
   display: flex;
   justify-content: center;
@@ -693,7 +685,6 @@ body.dark-mode .header__dropdown-item:hover {
   text-align: center;
   margin-top: 36px;
   margin-bottom: 36px;
-  color: #000;
 }
 .numbers__input {
   width: 135px;
