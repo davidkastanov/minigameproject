@@ -133,16 +133,42 @@ exerButtonsEls.forEach(btn => {
                 exerCreateItems(bornDeadYears);
                 break;
             case 'name-first-a':
-
+                const nameFirstA = scientists.filter(s => s.name.toUpperCase().startsWith('A'))
+                exerCreateItems(nameFirstA);
                 break;
             case 'dead-last':
-
+                const deadLast = scientists.reduce((a, b) => {
+                    if (a.born > b.born) {
+                        return a;
+                    } else {
+                        return b;
+                    }
+                }, 0);
+                exerCreateItems([deadLast]);
                 break;
             case 'born-dead-short-long':
+                const bornShort = scientists.reduce((a, b) => {
+                    if ((a.dead - a.born) < (b.dead - b.born)) {
+                        return a;
+                    } else {
+                        return b;
+                    }
 
+                });
+                const deadLong = scientists.reduce((a, b) => {
+                    if ((a.dead - a.born) > (b.dead - b.born)) {
+                        return a;
+                    } else {
+                        return b;
+                    }
+                });
+                exerCreateItems([bornShort, deadLong]);
                 break;
             case 'first-name-surname':
-
+                const firstNameSurname = scientists.filter((a) => a.name.trim().charAt(0).toUpperCase() === a.surname.trim().charAt(0).toUpperCase());
+                console.log(firstNameSurname);
+                
+                // exerCreateItems(firstNameSurname);
                 break;
             case 'worked-exerises-19-st':
                 const workedExerises19St = scientists.every(s => s.born + 18 >= 1800 && s.born <= 1900);
@@ -157,10 +183,14 @@ exerButtonsEls.forEach(btn => {
                 }
                 break;
             case 'sum-ages':
-
+                const sumAges = scientists.reduce((totalBorn, s) => totalBorn + s.dead - s.born, 0);
+                exerWarnEl.classList.add('green');
+                exerWarnEl.textContent = `Сума років усіх вчених - ${sumAges}`;
+                exerCreateItems(sumAges)
                 break;
             case 'remove-born-15-17':
-
+                const removeBorn15St17St = scientists.filter(s => s.born >= 1400 && s.born <= 1900);
+                exerCreateItems(removeBorn15St17St);
                 break;
         }
     })
