@@ -228,6 +228,7 @@ body.dark-mode .header__dropdown-item:hover {
       border-radius: 11px;
       background-color: rgb(153, 150, 150);
       transition: background-color 0.3s;
+      
  
       &::before {
         content: '';
@@ -238,9 +239,12 @@ body.dark-mode .header__dropdown-item:hover {
         height: 20px;
         border: solid 0.5px black;
         border-radius: 50%;
-        background-color: white;
+        background-color: rgb(255, 253, 253);
         transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
         transform-origin: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
  
@@ -254,7 +258,7 @@ body.dark-mode .header__dropdown-item:hover {
       top: 0;
       width: 20.533px;
       height: 20.667px;
-      padding: 3px;
+      // padding: 3px;
       border-radius: 50%;
       z-index: 1;
       transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1);
