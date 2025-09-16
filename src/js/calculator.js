@@ -62,8 +62,7 @@ calcEqualEl.addEventListener('click', () => {
             break;
         case '/':
             if (calcNumTwo === 0) {
-                // calcResultEl.classList.add('.calculator__result-num-error');
-                calcResultEl.style.color = '#900';
+                calcResultEl.classList.add('red');
                 calcTextEl.textContent = 'На нуль ділити не можна!';
                 calcResultEl.textContent = `!`;
                 return;
