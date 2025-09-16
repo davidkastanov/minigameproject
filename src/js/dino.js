@@ -6,24 +6,30 @@ let isAlive;
 let isJumping = false;
 
 function jump() {
-  if (isJumping) return; 
+  if (isJumping) return;
   isJumping = true;
 
-  let bottom = 0;
+  let bottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom")) || 0;
+  let upSpeed = 5;
+  let downSpeed = 5;
+
   let upInterval = setInterval(() => {
-    if (bottom >= 120) { 
+    if (bottom >= 120) {
       clearInterval(upInterval);
+
       let downInterval = setInterval(() => {
         if (bottom <= 0) {
           clearInterval(downInterval);
           isJumping = false;
         }
-        bottom -= 5; 
+        bottom -= downSpeed;
         dino.style.bottom = bottom + "px";
       }, 20);
+
+    } else {
+      bottom += upSpeed;
+      dino.style.bottom = bottom + "px";
     }
-    bottom += 5; 
-    dino.style.bottom = bottom + "px";
   }, 20);
 }
 
@@ -40,7 +46,7 @@ function startGame() {
     if (cactusLeft <= -50) {
       cactus.style.left = "700px";
     } else {
-      cactus.style.left = cactusLeft - 4 + "px"; 
+      cactus.style.left = cactusLeft - 6 + "px";
     }
 
     if (cactusLeft < 100 && cactusLeft > 50 && dinoBottom <= 50) {
@@ -52,7 +58,9 @@ function startGame() {
   }, 20);
 }
 
-document.addEventListener("keydown", function (event) {
-  if (!gameStarted) startGame();
-  if (event.code === "Space") jump();
+dino.addEventListener("mousedown", (event) => {
+  if (event.button === 0) {
+    if (!gameStarted) startGame();
+    jump();
+  }
 });
