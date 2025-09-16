@@ -76,6 +76,13 @@ section:not(:last-child)::after {
   color: #900;
 }
 
+.body {
+  background-image: url(../img/bcg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .header {
   background: #fff;
   padding: 18px 0;
@@ -709,10 +716,15 @@ body.dark-mode .backdrops img {
   padding: 10px;
   border-radius: 20px;
   background: #000;
-  transition: 250ms;
+  transition: background-color 100ms ease, transform 100ms ease, opacity 250ms ease;
 }
 .paper__item-btn:hover {
-  transform: translateY(-3px);
+  opacity: 0.6;
+}
+.paper__item-btn-active {
+  background-color: #039900;
+  transform: translate(0.5px, 1px);
+  box-shadow: inset 2px 3px 0px rgba(0, 0, 0, 0.25);
 }
 .paper__win-lost {
   font-size: 12px;
@@ -834,6 +846,7 @@ body.dark-mode .backdrops img {
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 .calculator__result-num {
   font-weight: 500;
