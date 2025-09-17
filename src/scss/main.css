@@ -713,13 +713,13 @@ body.dark-mode .backdrops img {
 }
 .random__btn {
   background-color: black;
-  color: white;
   padding: 10px;
   position: relative;
   top: 0;
-  left: 100px;
+  left: 70px;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+  cursor: pointer;
 }
 .random__input {
   background-color: #d7d7d7;
@@ -729,7 +729,7 @@ body.dark-mode .backdrops img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 10px 45px 10px 10px;
+  padding: 10px;
   border-radius: 20px;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
   position: absolute;
@@ -934,7 +934,7 @@ body.dark-mode .backdrops img {
   width: auto;
   margin: auto 0px;
   border: none;
-  padding: 10px 10px;
+  padding: 10px;
   border-radius: 20px;
   background: #d7d7d7;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
@@ -946,8 +946,6 @@ body.dark-mode .backdrops img {
   position: relative;
 }
 .time__box {
-  margin-left: 33px;
-  margin-right: 33px;
   height: 0;
   border: black dashed 1px;
   width: 100px;
@@ -965,6 +963,12 @@ body.dark-mode .backdrops img {
   justify-content: center;
   align-items: center;
   margin-top: 36px;
+  gap: 33px;
+}
+.time__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .time__icon {
   fill: white;
@@ -972,9 +976,7 @@ body.dark-mode .backdrops img {
   height: 15px;
 }
 .time__button {
-  position: absolute;
   background-color: #000;
-  border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   padding: 10px;
   position: absolute;
@@ -982,6 +984,8 @@ body.dark-mode .backdrops img {
   padding: 8px;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  bottom: 0;
+  left: 154.5px;
 }
 .time__amount {
   color: #000;
