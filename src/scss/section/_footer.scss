@@ -1,0 +1,87 @@
+.footer {
+    padding: 61px 0px 59px 0px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 165px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+
+        &-social {
+            color: $black-color;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 170%; 
+            transition: 250ms;
+
+            &:hover,
+            &:focus {
+                outline: none;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        &-form {
+            display: flex;
+            gap: 36px;
+        }
+
+        &-input {
+            padding: 10px 80px 10px 10px;
+            border-radius: 20px;
+            background: $input-color;
+            color: $placeholder-color;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: normal;
+            transition: 250ms;
+
+            &:hover,
+            &:focus {
+                outline: none;
+                opacity: 0.8;
+            }
+        }
+
+        &-btn {
+            padding: 10px;
+            border-radius: 20px;
+            background: $black-color;
+            color: $white-color;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: normal;
+            transition: 250ms;
+
+            &:hover,
+            &:focus {
+                outline: none;
+                opacity: 0.7;
+            }
+        }
+
+        &-text {
+            color: $black-color;
+            font-size: 6px;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
