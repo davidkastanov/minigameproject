@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/minigameproject/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/minigameproject/assets/index-31dcaa53.css">
+    <link rel="stylesheet" href="/minigameproject/assets/index-fbc8588d.css">
   </head>
   <body class="body">
 
@@ -344,15 +344,23 @@
 
 
         <div class="footer__box">
-            <form action="#" method="post" class="footer__box-form">
+            <form class="footer__box-form">
                 <input type="email" class="footer__box-input" placeholder="Ваша ел. адреса..." required>
-                <button type="submit" class="footer__box-btn">Підписатись</button>
+                <button type="button" class="footer__box-btn" data-footer-modal-open>Підписатись</button>
             </form>
             <p class="footer__box-text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
         </div>
     </div>
 </footer>
-    
+        <div class="footer__backdrop footer__is-hidden">
+        <div class="footer__modal">
+            <h2 class="footer__modal-title">Дякую за підписку!</h2>
+
+            <button class="footer__modal__close__btn">
+                &times;
+            </button>
+        </div>
+    </div>
     
 <section class="register">
     <div class="register__container">
