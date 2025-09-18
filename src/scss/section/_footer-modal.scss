@@ -1,0 +1,53 @@
+.footer__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 250ms;
+}
+
+.footer__backdrop:not(.footer__is-hidden) {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.footer__modal {
+    position: relative;
+    width: 463px;
+    height: 245px;
+    border-radius: 20px;
+    background: $white-color;
+    padding: 20px;
+
+    &-title {
+        color: $black-color;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+        margin: 83px 0px 0px 0px;
+    }
+
+    &__close__btn {
+        border: none;
+        background: transparent;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 32px;
+        width: 30px;
+        height: 30px;
+        transition: 250ms;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
