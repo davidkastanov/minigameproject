@@ -1,0 +1,39 @@
+.football {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 36px;
+    }
+
+
+    &__title {
+        color: $black-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    &__field {
+        width: 100%;
+        height: 320px;
+        position: relative;
+        border-radius: 37px;
+        border: 2px solid $black-color;
+        background: $field-color;
+        cursor: crosshair;
+    }
+
+
+    &__ball {
+        position: absolute;
+        left: 92px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 1s all;
+        width: 50px;
+    }
+}
