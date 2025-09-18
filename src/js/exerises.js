@@ -85,9 +85,11 @@ const scientists = [
     }
 ];
 
+
 const exerItemsEl = document.querySelector('.exerises__items');
 const exerButtonsEls = document.querySelectorAll('.exerises__question-button');
 const exerWarnEl = document.querySelector('.exerises__warn');
+
 
 const exerCreateItems = (array) => {
     exerItemsEl.innerHTML = array.map(({ name, surname, born, dead }) => `
@@ -99,6 +101,7 @@ const exerCreateItems = (array) => {
             </li>
             `).join('');
 };
+
 
 exerButtonsEls.forEach(btn => {
     btn.addEventListener('click', (event) => {
@@ -154,6 +157,7 @@ exerButtonsEls.forEach(btn => {
                         return b;
                     }
 
+
                 });
                 const deadLong = scientists.reduce((a, b) => {
                     if ((a.dead - a.born) > (b.dead - b.born)) {
@@ -166,9 +170,7 @@ exerButtonsEls.forEach(btn => {
                 break;
             case 'first-name-surname':
                 const firstNameSurname = scientists.filter((a) => a.name.trim().charAt(0).toUpperCase() === a.surname.trim().charAt(0).toUpperCase());
-                console.log(firstNameSurname);
-                
-                // exerCreateItems(firstNameSurname);
+                exerCreateItems(firstNameSurname);
                 break;
             case 'worked-exerises-19-st':
                 const workedExerises19St = scientists.every(s => s.born + 18 >= 1800 && s.born <= 1900);
@@ -189,11 +191,12 @@ exerButtonsEls.forEach(btn => {
                 exerCreateItems(sumAges)
                 break;
             case 'remove-born-15-17':
-                const removeBorn15St17St = scientists.filter(s => s.born >= 1400 && s.born <= 1900);
+                const removeBorn15St17St = scientists.filter(s => s.born < 1400 || s.born > 1700);
                 exerCreateItems(removeBorn15St17St);
                 break;
         }
     })
 })
+
 
 exerCreateItems(scientists);
